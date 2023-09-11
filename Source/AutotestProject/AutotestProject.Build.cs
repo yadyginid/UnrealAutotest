@@ -20,5 +20,11 @@ public class AutotestProject : ModuleRules
       // ... add private dependencies that you statically link with here ...	
     }
     );
+
+    if (Target.Configuration != UnrealTargetConfiguration.Shipping)
+    {
+      PublicDependencyModuleNames.Add("FunctionalTesting");
+    }
+
   }
 }

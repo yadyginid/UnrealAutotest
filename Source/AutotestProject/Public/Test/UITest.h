@@ -4,5 +4,6 @@
 
 #include "CoreMinimal.h"
 
-bool MoveMouse(FVector2D& Position);
+bool MoveMouse(FVector2D& Position, UWorld* World);
 bool LeftMouseClick(FVector2D& Position);
+bool Wait(float Duration);
