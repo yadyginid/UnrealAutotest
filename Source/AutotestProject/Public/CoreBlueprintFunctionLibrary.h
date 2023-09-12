@@ -14,4 +14,12 @@ class AUTOTESTPROJECT_API UCoreBlueprintFunctionLibrary : public UBlueprintFunct
 public:
     UFUNCTION(BlueprintCallable, Category = "Test")
     static void TestClick(FVector2D Position, APlayerController* PlayerController);
+
+    UFUNCTION(BlueprintCallable, Category = "Test")
+    static void TestClickOff(FVector2D Position, APlayerController* PlayerController);
+
+    static void GetWidgetUnderCursor();
+
+    UFUNCTION(BlueprintCallable, Category = "Test")
+    static void ProcessEditorClick(FVector2D atCoordinates);
 };
